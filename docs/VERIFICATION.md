@@ -1,0 +1,13 @@
+# Verification evidence
+
+The November 12, 2026 release candidate passed **136 tests including subtests / 87 top-level cases**, npm run typecheck, npm run build and npm run test:browser. These are recorded local results, not a GitHub Actions badge or newly measured performance. Runtime: Node 22.17.0, npm 10.9.2, Windows/PowerShell; Chrome 157.0.8103.51.
+
+Tests cover exact eight-cart/six-opportunity decisions, tenant isolation, grouping without summed values, immutable review/rejection, concurrent/stale approvals, transactional batch failure, consent/purchase/expiry/staleness pre-send checks, deduplicated workers/restarts, uncertain outcomes, scoped concurrent single-use redemption, rounding, optional AI privacy/failures/fallback/limits, channel migration and deterministic context.
+
+Actual browser checks covered individual Review/focus return, selected batches and incompatibility reasons, edit/save/approve/reload, blocked stale/wrong sends, receipts, accepted-response-loss reconciliation without duplicate submission, promo single-use/repeat rejection, read-only local basket navigation, roles/timing and mobile layout. Copy generation used a visibly labeled test fixture, not model-quality evidence. Desktop queue fit was checked at 1280/1440px. No application page/hydration errors occurred; raw HTML and fresh Chrome DOM lacked a recorder attribute reported in a user's profile. No blanket hydration suppression was added.
+
+A sanitized release package was extracted without dependencies/build/database/credentials. Installation, build, migrations, synthetic seeding and actual credential-free template/fallback startup passed. Node SQLite and nested-extraction tracing-root warnings were nonfatal. No real send, deployment or new live generation occurred in that release pass.
+
+The original authorized synthetic live-copy run returned eight candidates: six original practical passes/two rejections. Separate validator-v2 offline revalidation accepted all eight without altering historical results or making new live calls. Only three projected contexts existed across eight labels: a small wording/fallback evaluation, not demonstrated personalization or prompt-injection resistance. No human ratings, time savings or conversion lift is claimed. Sanitized raw examples and revalidation are in evaluation/.
+
+Publication uses three actual screenshots from the verified current UI. They show the compact queue, an individual email proposal, and simulator promo redemption/repeat rejection. No application behavior changed to publish them, and prior tests are not relabeled as newly run verification.

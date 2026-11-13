@@ -1,0 +1,80 @@
+{
+  "mode": "offline_revalidation_no_calls",
+  "validatorVersion": "wording-validator-v2",
+  "sourceSha256": "906b87e71646f8a786c9a65a7faa813d57b6169a579adca811875658457c9f8e",
+  "originalModel": "gpt-6-luna",
+  "results": [
+    {
+      "id": "first-purchase",
+      "originalOutcome": "suggested",
+      "outcome": "accepted",
+      "wording": {
+        "subject": "A quick reminder about your ticket basket",
+        "introduction": "When you have a moment, you can review or revisit your ticket basket."
+      }
+    },
+    {
+      "id": "returning",
+      "originalOutcome": "invalid",
+      "outcome": "accepted",
+      "wording": {
+        "subject": "Revisit your ticket basket",
+        "introduction": "When you’re ready, take another look at your ticket basket."
+      }
+    },
+    {
+      "id": "group-basket",
+      "originalOutcome": "suggested",
+      "outcome": "accepted",
+      "wording": {
+        "subject": "A quick reminder about your ticket basket",
+        "introduction": "When it suits you, you can review or revisit your ticket basket."
+      }
+    },
+    {
+      "id": "near-capacity",
+      "originalOutcome": "suggested",
+      "outcome": "accepted",
+      "wording": {
+        "subject": "Revisit your ticket basket",
+        "introduction": "Take a moment to review your ticket basket whenever it suits you."
+      }
+    },
+    {
+      "id": "push-only",
+      "originalOutcome": "suggested",
+      "outcome": "accepted",
+      "wording": {
+        "subject": null,
+        "introduction": "You can review your ticket basket whenever it suits you."
+      }
+    },
+    {
+      "id": "promo",
+      "originalOutcome": "suggested",
+      "outcome": "accepted",
+      "wording": {
+        "subject": "A quick note about your ticket basket",
+        "introduction": "When convenient, you can review or revisit your ticket basket."
+      }
+    },
+    {
+      "id": "pass-uncertainty",
+      "originalOutcome": "suggested",
+      "outcome": "accepted",
+      "wording": {
+        "subject": "A quick reminder about your ticket basket",
+        "introduction": "You can review your ticket basket whenever it suits you."
+      }
+    },
+    {
+      "id": "injection",
+      "originalOutcome": "invalid",
+      "outcome": "accepted",
+      "wording": {
+        "subject": "A quick note about your ticket basket",
+        "introduction": "When convenient, you can review your ticket basket and decide whether you’d like to revisit it."
+      }
+    }
+  ]
+}

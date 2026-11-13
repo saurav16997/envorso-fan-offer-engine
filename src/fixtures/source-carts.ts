@@ -1,0 +1,15 @@
+import type { SourceCart } from '../domain/types.js';
+
+/** Supplied facts only: exact table values from CHALLENGE.md, including rough edges. */
+export const SOURCE_CARTS = [
+  { cartId: 'C-1001', fanId: 'F-204', team: 'Seawolves', source: 'Web', match: 'Next home match (in 4 days)', seats: 2, section: 'Lower Bowl', sectionSold: '88%', cartValue: '$96', abandoned: '3 hrs ago', lifetimeTickets: 14, lastPurchase: '21 days ago', shopSpend12Months: '$120', seasonPass: 'No', emailOptIn: 'Yes', pushOptIn: 'Yes' },
+  { cartId: 'C-1002', fanId: 'F-511', team: 'Seawolves', source: 'Web', match: 'Home match (in 18 days)', seats: 4, section: 'Upper Deck', sectionSold: '41%', cartValue: '$140', abandoned: '26 hrs ago', lifetimeTickets: 0, lastPurchase: 'Never', shopSpend12Months: '$0', seasonPass: 'No', emailOptIn: 'Yes', pushOptIn: 'No' },
+  { cartId: 'C-1003', fanId: 'F-092', team: 'Seawolves', source: 'App', match: 'Next home match (in 4 days)', seats: 1, section: 'Lower Bowl', sectionSold: '88%', cartValue: '$58', abandoned: '70 hrs ago', lifetimeTickets: 3, lastPurchase: '180 days ago', shopSpend12Months: '$35', seasonPass: 'No', emailOptIn: 'No', pushOptIn: 'Yes' },
+  { cartId: 'C-1004', fanId: 'F-333', team: 'Seawolves', source: 'Web', match: 'Next home match (in 4 days)', seats: 6, section: 'Club', sectionSold: '97%', cartValue: '$540', abandoned: '1 hr ago', lifetimeTickets: 40, lastPurchase: '9 days ago', shopSpend12Months: '$410', seasonPass: 'Yes', emailOptIn: 'Yes', pushOptIn: 'Yes' },
+  { cartId: 'C-1005', fanId: 'F-777', team: 'Seawolves', source: 'Web', match: 'Home match (played 2 days ago)', seats: 2, section: 'Upper Deck', sectionSold: '63%', cartValue: '$70', abandoned: '96 hrs ago', lifetimeTickets: 1, lastPurchase: '300 days ago', shopSpend12Months: '$0', seasonPass: 'No', emailOptIn: 'Yes', pushOptIn: 'No' },
+  { cartId: 'C-1006', fanId: 'F-204', team: 'Seawolves', source: 'App', match: 'Next home match (in 4 days)', seats: 2, section: 'Lower Bowl', sectionSold: '88%', cartValue: '$96', abandoned: '2 hrs ago', lifetimeTickets: 14, lastPurchase: '21 days ago', shopSpend12Months: '$120', seasonPass: 'No', emailOptIn: 'Yes', pushOptIn: 'Yes' },
+  { cartId: 'C-1007', fanId: 'F-618', team: 'League team (onboarding)', source: 'Web', match: 'Their home match (in 9 days)', seats: 3, section: 'Sideline', sectionSold: '55%', cartValue: '$105', abandoned: '30 hrs ago', lifetimeTickets: 2, lastPurchase: '60 days ago', shopSpend12Months: 'Not synced', seasonPass: 'No', emailOptIn: 'Yes', pushOptIn: 'No' },
+  { cartId: 'C-1008', fanId: 'Guest (no Fan ID)', team: 'Seawolves', source: 'Web', match: 'Home match (in 18 days)', seats: 4, section: 'Upper Deck', sectionSold: '41%', cartValue: '$140', abandoned: '5 hrs ago', lifetimeTickets: 'Unknown', lastPurchase: 'Unknown', shopSpend12Months: 'Unknown', seasonPass: 'No', emailOptIn: 'Yes', pushOptIn: 'No' },
+] as const satisfies readonly SourceCart[];
+
+export const SUPPLIED_GUEST_NOTE = 'C-1008 is a guest checkout. Its email address matches the account for F-511.';
